@@ -1,5 +1,5 @@
 ## Requirements
- - [@censor1337/cfx-core](https://github.com/CENSOR1337/FiveM-CS_Lib)
+ - [@censor1337/FiveM-CS_Lib](https://github.com/CENSOR1337/FiveM-CS_Lib)
 
 ## Example 
 ```lua
