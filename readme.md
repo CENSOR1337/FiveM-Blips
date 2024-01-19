@@ -13,6 +13,8 @@ local instance = exports["censor_blips"]:addBlip({
 
 Citizen.SetTimeout(5000, function()
     exports["censor_blips"]:removeBlip(instance)
+    -- Can also use 
+    -- instance.destroy()
 end)
 
 ```
