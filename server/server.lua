@@ -11,11 +11,10 @@ local function addBlip(param)
 end
 
 local function removeBlip(blipObject)
-    cslib.typeCheck(blipObject, "table", "function")
+    cslib.typeCheck(blipObject, "table")
+    cslib.typeCheck(blipObject.destroy, "table", "function")
 
-    if (blipObject.destroy) then
-        blipObject.destroy()
-    end
+    blipObject.destroy()
 end
 
 exports("addBlip", addBlip)
