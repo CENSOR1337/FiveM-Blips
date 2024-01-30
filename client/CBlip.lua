@@ -1,3 +1,7 @@
+local function toFloat(number)
+    return 0.0 + number
+end
+
 ---@diagnostic disable-next-line: duplicate-set-field
 function CBlip:constructor(...)
     self:init(...)
@@ -11,6 +15,8 @@ function CBlip:constructor(...)
     self.scale = param.scale or 1.0
     self.shortRange = param.shortRange or true
     self.display = param.display or 4
+
+    self.scale = toFloat(self.scale)
 
     self:createBlip()
 end
